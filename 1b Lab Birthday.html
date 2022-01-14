@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Happy Birthday!</title>
+	<meta charset="utf-8">
+</head>
+
+<style>
+	body {
+		background-color: teal;
+		text-align: center;
+		margin: 50px;
+	}
+</style>
+
+<body>
+	<h2>Happy Birthday</h2>
+
+	<label for="name">Enter a first name:</label>
+	<input type="text" name="name" id="name"><br><br>
+
+	<button onclick="display()">Print Happy Birthday</button><br>
+	<p id="output"></p>
+
+	<script>
+		"use strict";
+		function display() {
+		  //access the HTML input and output elements
+		  var nameElement = document.getElementById("name");
+		  var outputElement = document.getElementById("output");
+		  //input the user's name
+		  var name = nameElement.value;
+          // use the name to generate the song
+          var out = generateSong(name);
+          // copy the song to the output element
+          outputElement.innerHTML = out;
+		}
+
+		function generateSong(name) {
+  		var out  = "Happy Birthday to you<br>";
+  		out += "Happy Birthday to you<br>";
+  		out += "Happy Birthday dear " + name + "<br>";
+  		out += "Happy Birthday to you<br>";
+  		return out;
+}
+	</script>
+</body>
+</html>
