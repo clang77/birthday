@@ -1,3 +1,3 @@
 # birthday
 simple html and js
-created within my first coding class
+created within one of my first coding classes
